@@ -8,15 +8,14 @@ const PrezzoPerKm = 0.21;
 var prezzopieno = km * PrezzoPerKm;
 console.log(prezzopieno);
 // 3) VERIFICA IDONEITA' SCONTO
-var sconto;
+var sconto = 0;
 
 if (eta < 18){
     sconto = (prezzopieno / 100) * 20; 
 } else if (eta > 65){
     sconto = (prezzopieno / 100) * 40;
-} else {
-    sconto = 0;
-}
+} 
+
 console.log(sconto);
 var prezzoscontato = prezzopieno - sconto;
 console.log(prezzoscontato);
